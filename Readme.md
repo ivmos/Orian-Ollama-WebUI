@@ -1,5 +1,30 @@
 <div align="center"> <h1>🌐 Orian (Ollama WebUI)</h1> </div> <a href="https://chromewebstore.google.com/detail/orian-ollama-webui/omjofoiomojnencdajljicnjoipcbbfc">Download Extension</a>
 
+## About this fork ##
+
+This fork is about a dirty way to use the extension against your remote Ollama.
+1. Clone this repo
+2. Find "https://remote.ollama" string and replace it by your remote host.
+3. Make sure you disabled or configured CORS for your host https://objectgraph.com/blog/ollama-cors/
+e.g in linux:
+```
+Edit the ollama.service using the following command
+
+sudo systemctl edit ollama.service
+Add the following environment variables
+
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0"
+Environment="OLLAMA_ORIGINS=*"
+Then restart the ollama service
+
+sudo service ollama restart
+```
+5. Install the extension manually via this repo instead of the official or chrome web store.
+
+Note: I made it work correctly with deepseek-r1, whereas gpt-oss seems to fail for some reason.
+
+
 ## Overview 🔍📊🗂️📋
 **Orian** (Ollama WebUI) is a Chrome extension that provides quick access to your favorite local Language Model (LLM) directly from your browser. With features like open-source chat integration, mail reply suggestions, and more, it's designed to enhance your browsing experience with AI capabilities.
 
