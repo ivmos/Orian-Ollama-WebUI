@@ -31,8 +31,8 @@
     "type": "module"
   },
   "host_permissions": [
-    "http://localhost:11434/api/tags",
-    "http://localhost:11434/api/generate"
+    "http://remote.ollama/api/tags",
+    "http://remote.ollama/api/generate"
   ],
   "side_panel": {
     "default_path": "panel.html",

@@ -32,7 +32,7 @@ async function getModelFromStorage() {
   });
 }
 
-const ollama_host = 'http://localhost:11434';
+const ollama_host = 'https://remote.ollama';
 // Function to get response from Language Learning Model (LLM)
 async function getResponseFromLLM(query, port) {
 
