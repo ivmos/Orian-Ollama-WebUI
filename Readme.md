@@ -58,9 +58,9 @@ The Chat Interface is a key feature of Orian, enabling seamless interaction with
 - **System Information:** To optimize AI performance based on CPU and memory usage.
 
 ## 🔗 API Integration
-The extension communicates with a local Ollama instance via the following endpoints:
-- `http://remote.ollama/api/tags`
-- `http://remote.ollama/api/generate`
+The extension communicates with a remote Ollama instance via the following endpoints:
+- `https://remote.ollama/api/tags`
+- `https://remote.ollama/api/generate`
 
 ## 📋 How to Use
 1. Open the side panel using `Ctrl+Shift+Left` (or `Command+Shift+Left` on macOS).
